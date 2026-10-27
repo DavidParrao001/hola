@@ -1,0 +1,50 @@
+3. Consultas avanzadas sobre una o más tablas
+
+3.1-Funciones de una Sola Fila
+
+Las funciones de una sola fila en SQL, también conocidas como funciones escalares, 
+son herramientas fundamentales para la manipulación de datos. Operan sobre un valor 
+único de una fila y devuelven un solo resultado por cada fila.
+
+
+➤¿Qué son las Funciones de una Sola Fila?
+Son funciones que aceptan uno o más argumentos de una sola fila de una tabla y
+retornan un único valor para esa misma fila. A diferencia de las funciones de 
+agregado, como COUNT () o SUM (), que operan sobre un conjunto de filas para dar un 
+único resultado, las Funciones de una Sola Fila actúan sobre cada fila individualmente
+
+➤ Tipos de Funciones de una Sola Fila
+Estas funciones se agrupan en varias categorías según el tipo de dato que manipulan :
+
+
+Funciones de Cadena (String): Manipulan texto.
+
+Funciones Numéricas: Realizan operaciones matemáticas.
+
+Funciones de Fecha y Hora:  Trabajan con datos de tipo fecha y hora.
+
+Funciones de Conversión: Convierten un tipo de dato a otro.
+
+Funciones Generales: Usualmente relacionadas con el manejo de valores nulos.
+
+
+¿Cómo se usan ?
+La sintaxis general es NOMBRE_FUNCION (argumentol, argumento2, ...) donde los argumentos
+pueden ser nombres de columnas, valores literales o incluso el resultado de otra función
+
+➤ Funciones Numéricas
+
+
+Función |     Descripción      |         Ejemplo |                    Resultado
+
+ABS() | Devuelve el valor absoluto. | SELECT ABS(-25); | 25
+
+ROUND() | Redondea un número. | SELECT ROUND(15.678, 2); | 15.68
+
+CEIL() | Redondea hacia arriba al entero más cercano. | SELECT CEIL(12.34); | 13
+
+FLOOR() | Redondea hacia abajo al entero más cercano. | SELECT FLOOR(12.98); | 12
+
+MOD() | Devuelve el resto de una división. | SELECT MOD(10, 3); | 1
+
+POWER()| Eleva un número a una potencia.| SELECT POWER(2, 3); | 8 
